@@ -1,3 +1,4 @@
-<h1>CSD 340 Web Development with HTML and CSS</h1>
-<h2>Contributors</h2>
-
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* Instructor: Sue Sampsom
+* Student: Pj Ellis
