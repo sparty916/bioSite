@@ -1,0 +1,324 @@
+/* pj ellis - bioSite Page - csd 340 - css code */
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+  
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #666666;
+    background-image: linear-gradient(#666666, #EEEEEE);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    font-weight: 400;
+    font-size: 32pt;
+    text-align: center;
+    margin: 5px auto;
+}
+
+h2 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 32pt;
+    text-align: center;
+    margin: 0px auto;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 24pt;
+    text-align: center;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0px auto;
+    border: 1pt solid black;
+    text-align: justify;
+}
+
+.navbar {
+    top: 0px;
+    background-color: black;
+}
+
+.navbar a {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: black;
+    color: white;
+    float: right;
+    display: inline;
+    font-size: 14pt;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    border: 1pt solid white;
+}
+
+.navbar a:hover {
+    color: cornflowerblue;
+    background-color: #666666;
+}
+
+.navbar:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.intro {
+    width: 850px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1pt solid black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 850px;
+    margin: 5px auto;
+    border: 1pt solid black;
+}
+
+.grid-item {
+    border: 1px solid rgba(185, 63, 8);
+    padding: 5px;
+}
+
+.about {
+    width: 850px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1pt solid black;
+    overflow: auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.image-gallery {
+    margin-top: 10px
+}
+
+.grid-container_4 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 850px;
+    margin: 5px auto;
+    border: 1pt solid black;
+}
+
+.image-gallery:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.quotebox {
+    border-top: 2pt solid #666666;
+    border-bottom: 2pt solid #666666;
+    width: 575px;
+    margin: 10px auto;
+}
+
+blockquote {
+    font-family: 'Special Elite', cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18pt;
+    color: black;
+    text-shadow: 2px 2px 5px white;
+}
+
+.hobbies_golf {
+    width: 850px;
+    margin: 5px auto;
+    padding: 10px;
+    border: 1pt solid black;
+    overflow: auto;
+    display: flex;
+}
+
+#golf_left {
+    width: 60%;
+    margin: 5px auto;
+    padding: 10px;
+    overflow: auto;
+    border: 1pt solid black;
+}
+
+#golf_right {
+    width: 40%;
+    margin: 5px auto;
+    padding: 10px;
+    overflow: auto;
+    border: 1pt solid black;
+}
+
+.hobbies_fish {
+    width: 850px;
+    margin: 5px auto;
+    padding: 10px;
+    border: 1pt solid black;
+    overflow: auto;
+    display: flex;
+}
+
+#fish_left {
+    width: 40%;
+    margin: 5px auto;
+    padding: 10px;
+    overflow: auto;
+    border: 1pt solid black;
+}
+
+#fish_right {
+    width: 60%;
+    margin: 5px auto;
+    padding: 10px;
+    overflow: auto;
+    border: 1pt solid black;
+}
+
+.hobbies_vibin {
+    width: 850px;
+    margin: 5px auto;
+    padding: 10px;
+    border: 1pt solid black;
+    overflow: auto;
+    display: flex;
+}
+
+#vibin_left {
+    width: 33.3%;
+    margin: 5px auto;
+    padding: 10px;
+    overflow: auto;
+    border: 1pt solid black;
+}
+
+#vibin_center {
+    width: 33.3%;
+    margin: 5px auto;
+    padding: 10px;
+    overflow: auto;
+    border: 1pt solid black;
+}
+
+#vibin_right {
+    width: 33.3%;
+    margin: 5px auto;
+    padding: 10px;
+    overflow: auto;
+    border: 1pt solid black;
+}
+
+ul {
+    float: left;
+    padding: 0px 20px 20px;
+    margin: 0px 10px 10px;
+    text-align: left;
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+figure {
+    margin: 5px auto;    
+    padding: 10px;
+    text-align: center;
+}
+
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: .75em;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.firstcharacter {
+    color: black;
+    float: left;
+    font-family: 'Style Script', cursive;
+    font-size: 90px;
+    line-height: 60px;
+    margin-right: 10px;
+}
+
+.cbimage {
+    border: 2pt solid white;
+    box-shadow: 0px 0px 10px 0px #000000;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+}
+
+.cbimage:hover {
+    filter: grayscale(0%);
+    filter: grey;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+footer {    
+    width: 960px;
+    height: auto;
+    margin: 0px auto;
+    top: 0px;
+    border: 1pt solid black;
+}
+
+.socials {
+    background-color: #CCCCCC;
+    text-align: center;
+    display: block;
+    padding: 14px;
+    border-top: 3pt solid #666666;
+    border-bottom: 15pt solid black;
+}
+
+.socials a {
+    padding: 5px 40px;
+}
+
+.socials img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;    
+}
+
+.socials img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;;    
+}
+
+.soclink{
+    width: 32px;
+    height: auto;
+}
+
+.resources{
+    height: 1000px;
+    border: 1pt solid black;
+}
+
+/* END OF CSS */

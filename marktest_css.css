@@ -1,0 +1,205 @@
+/* pj ellis - bioSite TESTING Page - csd 340 - css code */
+/* Use this page to experiment on some things, along with a testing html file 
+    to figure out things before committing to real site */
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+
+#grad {
+    background-color: #666666;
+    background-image: linear-gradient(#666666, #EEEEEE);
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    font-weight: 400;
+    font-size: 32pt;
+    text-align: center;
+
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 24;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16;
+}
+
+.firstcharacter {
+    color: black;
+    float: left;
+    font-family: 'Style Script', cursive;
+    font-size: 90px;
+    line-height: 60px;
+    margin-right: 10px;
+  }
+
+nav {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+nav a {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 14pt;
+    float: right;
+    display: inline;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: cornflowerblue;
+    font-style: italic;
+}
+
+nav a:visited {
+    color: moccasin;
+    font-size: 14pt;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column_3 {
+    float: left;
+    padding: 10px;
+  }
+  
+.left, .right {
+    width: 25%;
+}
+  
+.middle {
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+footer {
+    background-color: black;
+    width: 100%;
+    margin: 0px;
+}
+
+footer p {
+    background-color: black;
+}
+
+footer a {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+    color: black;
+}
+
+footer a:visited {
+    color: black;
+}
+
+ul {
+    float: left;
+    padding: 20px;
+    width: 30%;
+    height: 300px;
+}
+
+
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    height: 300px;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.facts {
+    display: inline-block;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+figure {
+    float: left;
+    padding: 20px;
+}
+
+figcaption {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: .75em;
+    font-weight: 400;
+}
+
+.socials {
+    background-color: #CCCCCC;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    position: relative;
+    display: inline-block;
+}
+
+.socials .colored {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+.socials:hover .colored {
+    display: inline;
+}
+
+.socials a {
+    float: center;
+}
+
+.cbimage {
+    filter: grayscale(0%);
+    filter: grey;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+.cbimage:hover {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+}
+
+/*<a href="https://iconscout.com/icons/logo" target="_blank">Facebook messenger Logo Icon</a> by <a href="https://iconscout.com/contributors/unicons">Unicons Font</a> on <a href="https://iconscout.com">IconScout</a>*/
