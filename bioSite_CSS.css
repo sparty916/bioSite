@@ -1,8 +1,4 @@
 /* pj ellis - bioSite Page - csd 340 - css code */
-
-* {
-    font-family: 'Quicksand', sans-serif;
-}
   
 body {
     font-family: 'Quicksand', sans-serif;
@@ -12,20 +8,21 @@ body {
 }
 
 h1 {
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Special Elite', cursive;
     font-weight: 400;
-    font-size: 32pt;
+    font-size: 52pt;
     text-align: center;
-    margin: 5px auto;
+    margin: 0px auto;
+    text-shadow: 2px 2px 5px #666666;
 }
 
 h2 {
-    font-family: 'Rock Salt', cursive;
-    font-size: 32pt;
+    font-family: 'Special Elite', cursive;
+    font-size: 42pt;
     text-align: center;
-    margin: 0px auto;
+    margin: 10px auto;
     padding: 5px;
-    text-decoration: underline;
+    text-shadow: 2px 2px 5px #666666;
 }
 
 h3 {
@@ -45,11 +42,21 @@ p {
     margin: 0px auto;
     border: 1pt solid black;
     text-align: justify;
+    background-color: whitesmoke;
+}
+
+.main_photo {
+    width: 960px;
+    height: 740px;
+    margin: 0px auto;
+    border: 1pt solid black;
 }
 
 .navbar {
     top: 0px;
     background-color: black;
+    position: sticky;
+    z-index: 99999;
 }
 
 .navbar a {
@@ -62,12 +69,10 @@ p {
     text-align: center;
     padding: 14px 40px;
     text-decoration: none;
-    border: 1pt solid white;
 }
 
 .navbar a:hover {
     color: cornflowerblue;
-    background-color: #666666;
 }
 
 .navbar:after {
@@ -76,32 +81,29 @@ p {
     display: table;
 }
 
-.intro {
-    width: 850px;
-    margin: 10px auto;
-    padding: 10px;
-    border: 1pt solid black;
+.content {
+    width: 920px;
+    margin: 0px auto;
+    padding: 20px;
+    overflow: hidden;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    width: 850px;
-    margin: 5px auto;
-    border: 1pt solid black;
+    grid-template-columns: 30% 40% 30%;
+    width: 915px;
+    justify-content: space-evenly;
 }
 
-.grid-item {
-    border: 1px solid rgba(185, 63, 8);
-    padding: 5px;
-}
-
-.about {
-    width: 850px;
-    margin: 10px auto;
+.work_pic {
+    width: 50%;
+    height: auto;
+    float: right;
     padding: 10px;
-    border: 1pt solid black;
+    margin-left: 20px;
     overflow: auto;
+    display: inline;
+    align-items: center;
 }
 
 .left {
@@ -112,134 +114,108 @@ p {
     float: right;
 }
 
-.image-gallery {
-    margin-top: 10px
-}
-
 .grid-container_4 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    width: 850px;
-    margin: 5px auto;
-    border: 1pt solid black;
-}
-
-.image-gallery:after {
-    content: "";
-    clear: both;
-    display: table;
+    width: auto;
+    justify-content: space-evenly;
 }
 
 .quotebox {
+    width: 750px;
+    margin: 0px auto;
     border-top: 2pt solid #666666;
     border-bottom: 2pt solid #666666;
-    width: 575px;
-    margin: 10px auto;
 }
 
 blockquote {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Nanum Gothic', sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 18pt;
-    color: black;
-    text-shadow: 2px 2px 5px white;
+    color: #000000;
+    text-shadow: 2px 2px 5px #666666;
 }
 
-.hobbies_golf {
-    width: 850px;
-    margin: 5px auto;
-    padding: 10px;
-    border: 1pt solid black;
+.hobbies {
+    width: 960px;
+    margin: 10px 0px 0px;
+    padding: 0px;
     overflow: auto;
     display: flex;
 }
 
 #golf_left {
-    width: 60%;
-    margin: 5px auto;
-    padding: 10px;
+    width: 70%;
+    margin: 0px 0px 0px 10px;
+    padding: 20px;
     overflow: auto;
-    border: 1pt solid black;
+    background-color: #EEEEEE;
 }
 
 #golf_right {
-    width: 40%;
-    margin: 5px auto;
-    padding: 10px;
+    width: 30%;
+    margin: 0px 10px 0px 0px;
+    padding: 20px;
     overflow: auto;
-    border: 1pt solid black;
-}
-
-.hobbies_fish {
-    width: 850px;
-    margin: 5px auto;
-    padding: 10px;
-    border: 1pt solid black;
-    overflow: auto;
-    display: flex;
+    background-color: #EEEEEE
 }
 
 #fish_left {
-    width: 40%;
-    margin: 5px auto;
-    padding: 10px;
+    width: 30%;
+    margin: 0px 0px 0px 10px;
+    padding: 20px;
     overflow: auto;
-    border: 1pt solid black;
+    background-color: #CCCCCC;
 }
 
 #fish_right {
-    width: 60%;
-    margin: 5px auto;
-    padding: 10px;
+    width: 70%;
+    margin: 0px 10px 0px 0px;
+    padding: 20px;
     overflow: auto;
-    border: 1pt solid black;
-}
-
-.hobbies_vibin {
-    width: 850px;
-    margin: 5px auto;
-    padding: 10px;
-    border: 1pt solid black;
-    overflow: auto;
-    display: flex;
+    background-color: #CCCCCC;
 }
 
 #vibin_left {
-    width: 33.3%;
-    margin: 5px auto;
-    padding: 10px;
+    width: 30%;
+    margin: 0px 0px 10px 10px;
+    padding: 20px;
     overflow: auto;
-    border: 1pt solid black;
+    background-color: #EEEEEE;
 }
 
 #vibin_center {
-    width: 33.3%;
-    margin: 5px auto;
-    padding: 10px;
+    width: 40%;
+    margin: 0px auto 10px;
+    padding: 20px;
     overflow: auto;
-    border: 1pt solid black;
+    background-color: #EEEEEE;
 }
 
 #vibin_right {
-    width: 33.3%;
-    margin: 5px auto;
-    padding: 10px;
+    width: 30%;
+    margin: 0px 10px 10px 0px;
+    padding: 20px;
     overflow: auto;
-    border: 1pt solid black;
+    background-color: #EEEEEE;
 }
 
 ul {
     float: left;
-    padding: 0px 20px 20px;
-    margin: 0px 10px 10px;
+    padding: 10px 20px 20px;
+    margin: 10px 10px 10px;
     text-align: left;
     list-style-type: square;
     list-style-position: outside;
 }
 
+li {
+    font-size: 18pt;
+}
+
 figure {
-    margin: 5px auto;    
+    margin: 5px 10px;    
     padding: 10px;
     text-align: center;
 }
@@ -254,27 +230,36 @@ figcaption {
 
 .firstcharacter {
     color: black;
+    text-shadow: 2px 2px 5px #666666;
     float: left;
-    font-family: 'Style Script', cursive;
+    font-family: 'Quicksand', sans-serif;
     font-size: 90px;
     line-height: 60px;
-    margin-right: 10px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
 }
 
-.cbimage {
+.cbchange {
+    position: relative;
+    display: inline-block;
+}
+
+.cbchange img {
     border: 2pt solid white;
-    box-shadow: 0px 0px 10px 0px #000000;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -webkit-transition: all 1s ease;
+    box-shadow: 0px 0px 5px 0px #000000;
 }
 
-.cbimage:hover {
-    filter: grayscale(0%);
-    filter: grey;
-    -webkit-filter: grayscale(0%);
-    filter: none;
-    transition: 1s ease;
+.cbchange .img-reg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.cbchange:hover .img-reg {
+    display: inline;
 }
 
 footer {    
@@ -282,7 +267,10 @@ footer {
     height: auto;
     margin: 0px auto;
     top: 0px;
-    border: 1pt solid black;
+    border-top: 3pt solid black;
+    border-bottom: 15pt solid black;
+    border-right: 1pt solid black;
+    border-left: 1pt solid black;
 }
 
 .socials {
@@ -290,35 +278,69 @@ footer {
     text-align: center;
     display: block;
     padding: 14px;
-    border-top: 3pt solid #666666;
-    border-bottom: 15pt solid black;
 }
 
 .socials a {
     padding: 5px 40px;
+    position: relative;
+    display: inline-block;
 }
 
-.socials img {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -webkit-transition: all 1s ease;    
-}
-
-.socials img:hover {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    filter: none;
-    transition: 1s ease;;    
-}
-
-.soclink{
+.socials img{
     width: 32px;
     height: auto;
+    background-color: white;
+    border: 1pt solid black;
+    border-radius: 2pt;
 }
 
-.resources{
-    height: 1000px;
-    border: 1pt solid black;
+.soclink:hover {
+    box-shadow: 0px 0px 10px 0px cornflowerblue;
 }
+
+.resources {
+    margin: 100px auto;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 850px;
+    margin: 0px auto 30px;
+    border: 2pt solid black;
+    background-color: #CCCCCC;
+}
+
+th {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    text-indent: 10px;
+    color: white;
+    background-color: black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    text-indent: 20px;
+}
+
+td a {
+    text-decoration: none;
+}
+
+td a:visited {
+    color: moccasin;
+}
+
+td a:hover {
+    color: black;
+}
+
 
 /* END OF CSS */
